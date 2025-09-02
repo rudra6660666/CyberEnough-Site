@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+  <loc>https://cyberenough.netlify.app/</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://cyberenough.netlify.app/courses</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://cyberenough.netlify.app/about</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://cyberenough.netlify.app/terminal</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://cyberenough.netlify.app/ethical-hacking-fundamentals</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://cyberenough.netlify.app/advanced-penetration-testing</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://cyberenough.netlify.app/mobile-security-testing</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://cyberenough.netlify.app/network-security-fundamentals</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://cyberenough.netlify.app/web-application-security-testing</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://cyberenough.netlify.app/red-team-operations</loc>
+  <lastmod>2025-09-02T10:32:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+</urlset>
