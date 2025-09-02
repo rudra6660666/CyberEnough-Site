@@ -26,9 +26,9 @@ If you want to run this project locally on your system:
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/<your-repo-name>.git
+git clone https://github.com/rudra6660666/CyberEnough-Site.git
 
 # Go to project folder
-cd <your-repo-name>
+cd CyberEnough-Site
 
 # Open index.html in your browser OR use Live Server (VS Code extension)
