@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberEnough - Master Penetration Testing</title>
+    <meta name="description"
+        content="Learn penetration testing from industry experts. Comprehensive courses, hands-on labs, and certification preparation.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    #bttn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
+}
+
+</style>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                    <span class="logo-text">CyberEnough</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="terminal.html" class="nav-link">Test Terminal</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Master <span class="gradient-text">Penetration Testing</span><br>
+                            Secure the Digital World
+                        </h1>
+                        <p class="hero-description">
+                            Learn ethical hacking and cybersecurity from industry experts.
+                            Comprehensive courses designed to make you a skilled penetration tester.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="courses.html" class="btn btn-primary">Start Learning</a>
+                            <a href="about.html"  class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="terminal-window">
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="prompt">rudra@cyberenough:~$</span>
+                                    <span class="command typing-animation">nmap -sS -O target.example.com</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output">Starting Nmap scan...</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output success">22/tcp open ssh</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output success">80/tcp open http</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output success">443/tcp open https</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-background">
+                    <div class="grid-pattern"></div>
+                    <div class="floating-elements">
+                        <div class="floating-element" style="--delay: 0s; --x: 20%; --y: 20%;"></div>
+                        <div class="floating-element" style="--delay: 2s; --x: 80%; --y: 30%;"></div>
+                        <div class="floating-element" style="--delay: 4s; --x: 60%; --y: 70%;"></div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="cbox">
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose CyberEnough?</h2>
+                    <p class="section-description">
+                        Industry-leading penetration testing education with hands-on experience
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Hands-on Labs</h3>
+                        <p class="feature-description">
+                            Practice on real-world scenarios with our interactive penetration testing labs
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Expert Instructor</h3>
+                        <p class="feature-description">
+                            Learn from certified ethical hackers and cybersecurity professionals
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Certification Ready</h3>
+                        <p class="feature-description">
+                            Prepare for industry certifications like CEH, OSCP, and CISSP
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Updated Content</h3>
+                        <p class="feature-description">
+                            Stay current with the latest penetration testing tools and techniques
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Preview Section -->
+        <section class="course-preview">
+            <div class="cbox">
+                <div class="section-header">
+                    <h2 class="section-title">Popular Courses</h2>
+                    <p class="section-description">
+                        Start your penetration testing journey with our most popular courses
+                    </p>
+                </div>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-level">Beginner</div>
+                            <div class="course-duration">8 weeks</div>
+                        </div>
+                        <h3 class="course-title">Ethical Hacking Fundamentals</h3>
+                        <p class="course-description">
+                            Learn the basics of ethical hacking, including reconnaissance,
+                            scanning, and vulnerability assessment.
+                        </p>
+                        <div class="course-topics">
+                            <span class="topic">Network Scanning</span>
+                            <span class="topic">Web Vulnerabilities</span>
+                            <span class="topic">Social Engineering</span>
+                        </div>
+                        <a href="ethical-hacking-fundamentals.html" class="course-link">View Course</a>
+                    </div>
+                    <div class="course-card featured">
+                        <div class="course-header">
+                            <div class="course-level">Intermediate</div>
+                            <div class="course-duration">12 weeks</div>
+                        </div>
+                        <h3 class="course-title">Advanced Penetration Testing</h3>
+                        <p class="course-description">
+                            Master advanced techniques including exploit development,
+                            post-exploitation, and red team operations.
+                        </p>
+                        <div class="course-topics">
+                            <span class="topic">Exploit Development</span>
+                            <span class="topic">Post-Exploitation</span>
+                            <span class="topic">Red Team Tactics</span>
+                        </div>
+                        <a href="advanced-penetration-testing.html" class="course-link">View Course</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-level">Advanced</div>
+                            <div class="course-duration">16 weeks</div>
+                        </div>
+                        <h3 class="course-title">Mobile Security Testing</h3>
+                        <p class="course-description">
+                            Specialize in mobile application security testing for
+                            iOS and Android platforms.
+                        </p>
+                        <div class="course-topics">
+                            <span class="topic">iOS Security</span>
+                            <span class="topic">Android Testing</span>
+                            <span class="topic">API Security</span>
+                        </div>
+                        <a href="mobile-security-testing.html" class="course-link">View Course</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="cbox">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your Cybersecurity Journey?</h2>
+                    <p class="cta-description">
+                        Join thousands of students who have successfully launched their
+                        penetration testing careers with CyberEnough.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="courses.html" class="btn btn-primary btn-large">Explore Courses</a>
+                        <a href="about.html" class="btn btn-secondary btn-large">Learn About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="cbox">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                        <span class="logo-text">CyberEnough</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering the next generation of cybersecurity professionals
+                        through accessible penetration testing education by Rudra Dev.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Learn</h4>
+                        <a href="courses.html" class="footer-link">All Courses</a>
+                        <a href="courses.html" class="footer-link">Beginner Track</a>
+                        <a href="courses.html" class="footer-link">Advanced Track</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="about.html" class="footer-link">Our Team</a>
+                        <a href="about.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberEnough. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

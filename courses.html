@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - CyberEnough</title>
+    <meta name="description" content="Comprehensive penetration testing courses from beginner to advanced levels. Learn ethical hacking with hands-on labs.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                    <span class="logo-text">CyberEnough</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link active">Courses</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="terminal.html" class="nav-link">Test Terminal</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="cbox">
+                <div class="page-header-content">
+                    <h1 class="page-title">Penetration Testing Courses</h1>
+                    <p class="page-description">
+                        Master cybersecurity with our comprehensive penetration testing curriculum. 
+                        From fundamentals to advanced techniques, we've got you covered.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Filter -->
+        <section class="course-filter">
+            <div class="cbox">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Courses</button>
+                    <button class="filter-tab" data-filter="beginner">Beginner</button>
+                    <button class="filter-tab" data-filter="intermediate">Intermediate</button>
+                    <button class="filter-tab" data-filter="advanced">Advanced</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Grid -->
+        <section class="courses-grid">
+            <div class="cbox">
+                <div class="courses-list">
+                    <!-- Beginner Courses -->
+                    <div class="course-item" data-category="beginner">
+                        <div class="course-card-detailed">
+                            <div class="course-card-header">
+                                <div class="course-meta">
+                                    <span class="course-level beginner">Beginner</span>
+                                    <span class="course-duration">8 weeks</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">4.9 (2.1k reviews)</span>
+                                </div>
+                            </div>
+                            <h3 class="course-card-title">Ethical Hacking Fundamentals</h3>
+                            <p class="course-card-description">
+                                Start your cybersecurity journey with this comprehensive introduction to ethical hacking. 
+                                Learn reconnaissance, scanning, enumeration, and basic vulnerability assessment techniques.
+                            </p>
+                            <div class="course-curriculum">
+                                <h4>What you'll learn:</h4>
+                                <ul>
+                                    <li>Introduction to Cybersecurity and Ethical Hacking</li>
+                                    <li>Information Gathering and Reconnaissance</li>
+                                    <li>Network Scanning with Nmap</li>
+                                    <li>Vulnerability Scanning with OpenVAS</li>
+                                    <li>Web Application Security Basics</li>
+                                    <li>Social Engineering Techniques</li>
+                                    <li>Report Writing and Documentation</li>
+                                </ul>
+                            </div>
+                            <div class="course-tools">
+                                <h4>Tools covered:</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">Nmap</span>
+                                    <span class="tool-tag">Wireshark</span>
+                                    <span class="tool-tag">Burp Suite</span>
+                                    <span class="tool-tag">Metasploit</span>
+                                    <span class="tool-tag">OWASP ZAP</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-label">Course Fee:</span>
+                                    <span class="price">$299</span>
+                                </div>
+                                <a href="ethical-hacking-fundamentals.html" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-item" data-category="beginner">
+                        <div class="course-card-detailed">
+                            <div class="course-card-header">
+                                <div class="course-meta">
+                                    <span class="course-level beginner">Beginner</span>
+                                    <span class="course-duration">6 weeks</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">4.8 (1.8k reviews)</span>
+                                </div>
+                            </div>
+                            <h3 class="course-card-title">Network Security Fundamentals</h3>
+                            <p class="course-card-description">
+                                Understand network security concepts, protocols, and defensive mechanisms. 
+                                Perfect foundation for aspiring cybersecurity professionals.
+                            </p>
+                            <div class="course-curriculum">
+                                <h4>What you'll learn:</h4>
+                                <ul>
+                                    <li>Network Architecture and Protocols</li>
+                                    <li>Firewalls and Intrusion Detection Systems</li>
+                                    <li>Network Monitoring and Analysis</li>
+                                    <li>Wireless Network Security</li>
+                                    <li>VPN and Secure Communications</li>
+                                    <li>Network Hardening Techniques</li>
+                                </ul>
+                            </div>
+                            <div class="course-tools">
+                                <h4>Tools covered:</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">Wireshark</span>
+                                    <span class="tool-tag">pfSense</span>
+                                    <span class="tool-tag">Snort</span>
+                                    <span class="tool-tag">Aircrack-ng</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-label">Course Fee:</span>
+                                    <span class="price">$249</span>
+                                </div>
+                                <a href="network-security-fundamentals.html" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate Courses -->
+                    <div class="course-item" data-category="intermediate">
+                        <div class="course-card-detailed featured">
+                            <div class="featured-badge">Most Popular</div>
+                            <div class="course-card-header">
+                                <div class="course-meta">
+                                    <span class="course-level intermediate">Intermediate</span>
+                                    <span class="course-duration">12 weeks</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">4.9 (3.2k reviews)</span>
+                                </div>
+                            </div>
+                            <h3 class="course-card-title">Advanced Penetration Testing</h3>
+                            <p class="course-card-description">
+                                Master advanced penetration testing methodologies, exploit development, 
+                                and post-exploitation techniques used by professional pentesters.
+                            </p>
+                            <div class="course-curriculum">
+                                <h4>What you'll learn:</h4>
+                                <ul>
+                                    <li>Advanced Reconnaissance and OSINT</li>
+                                    <li>Exploit Development and Buffer Overflows</li>
+                                    <li>Post-Exploitation and Privilege Escalation</li>
+                                    <li>Active Directory Attacks</li>
+                                    <li>Web Application Penetration Testing</li>
+                                    <li>Wireless Network Penetration Testing</li>
+                                    <li>Red Team Operations</li>
+                                    <li>Advanced Persistent Threats (APT)</li>
+                                </ul>
+                            </div>
+                            <div class="course-tools">
+                                <h4>Tools covered:</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">Metasploit Pro</span>
+                                    <span class="tool-tag">Cobalt Strike</span>
+                                    <span class="tool-tag">Empire</span>
+                                    <span class="tool-tag">BloodHound</span>
+                                    <span class="tool-tag">Responder</span>
+                                    <span class="tool-tag">Impacket</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-label">Course Fee:</span>
+                                    <span class="price">$499</span>
+                                </div>
+                                <a href="advanced-penetration-testing.html" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-item" data-category="intermediate">
+                        <div class="course-card-detailed">
+                            <div class="course-card-header">
+                                <div class="course-meta">
+                                    <span class="course-level intermediate">Intermediate</span>
+                                    <span class="course-duration">10 weeks</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">4.7 (1.9k reviews)</span>
+                                </div>
+                            </div>
+                            <h3 class="course-card-title">Web Application Security Testing</h3>
+                            <p class="course-card-description">
+                                Comprehensive course on web application security testing, covering OWASP Top 10, 
+                                manual testing techniques, and automated scanning tools.
+                            </p>
+                            <div class="course-curriculum">
+                                <h4>What you'll learn:</h4>
+                                <ul>
+                                    <li>OWASP Top 10 Vulnerabilities</li>
+                                    <li>SQL Injection Attacks</li>
+                                    <li>Cross-Site Scripting (XSS)</li>
+                                    <li>Authentication and Session Management</li>
+                                    <li>API Security Testing</li>
+                                    <li>Manual Testing Methodologies</li>
+                                    <li>Automated Security Scanning</li>
+                                </ul>
+                            </div>
+                            <div class="course-tools">
+                                <h4>Tools covered:</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">Burp Suite Pro</span>
+                                    <span class="tool-tag">OWASP ZAP</span>
+                                    <span class="tool-tag">SQLmap</span>
+                                    <span class="tool-tag">Nikto</span>
+                                    <span class="tool-tag">Postman</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-label">Course Fee:</span>
+                                    <span class="price">Free</span>
+                                </div>
+                                <a href="web-application-security-testing.html" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Courses -->
+                    <div class="course-item" data-category="advanced">
+                        <div class="course-card-detailed">
+                            <div class="course-card-header">
+                                <div class="course-meta">
+                                    <span class="course-level advanced">Advanced</span>
+                                    <span class="course-duration">16 weeks</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">4.8 (1.5k reviews)</span>
+                                </div>
+                            </div>
+                            <h3 class="course-card-title">Mobile Security Testing</h3>
+                            <p class="course-card-description">
+                                Specialize in mobile application security testing for iOS and Android platforms. 
+                                Learn static and dynamic analysis techniques for mobile apps.
+                            </p>
+                            <div class="course-curriculum">
+                                <h4>What you'll learn:</h4>
+                                <ul>
+                                    <li>Mobile Security Architecture</li>
+                                    <li>iOS Application Security Testing</li>
+                                    <li>Android Application Security Testing</li>
+                                    <li>Static and Dynamic Analysis</li>
+                                    <li>Mobile API Security</li>
+                                    <li>Reverse Engineering Mobile Apps</li>
+                                    <li>Mobile Device Management (MDM)</li>
+                                </ul>
+                            </div>
+                            <div class="course-tools">
+                                <h4>Tools covered:</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">MobSF</span>
+                                    <span class="tool-tag">Frida</span>
+                                    <span class="tool-tag">Objection</span>
+                                    <span class="tool-tag">Genymotion</span>
+                                    <span class="tool-tag">Xcode</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-label">Course Fee:</span>
+                                    <span class="price">Free</span>
+                                </div>
+                                <a href="mobile-security-testing.html" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-item" data-category="advanced">
+                        <div class="course-card-detailed">
+                            <div class="course-card-header">
+                                <div class="course-meta">
+                                    <span class="course-level advanced">Advanced</span>
+                                    <span class="course-duration">14 weeks</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">4.9 (1.2k reviews)</span>
+                                </div>
+                            </div>
+                            <h3 class="course-card-title">Red Team Operations</h3>
+                            <p class="course-card-description">
+                                Master advanced adversarial tactics and techniques used in red team engagements. 
+                                Learn to think like an attacker and simulate advanced persistent threats.
+                            </p>
+                            <div class="course-curriculum">
+                                <h4>What you'll learn:</h4>
+                                <ul>
+                                    <li>Red Team Methodology and Planning</li>
+                                    <li>Advanced Persistence Techniques</li>
+                                    <li>Lateral Movement and Pivoting</li>
+                                    <li>Command and Control (C2) Infrastructure</li>
+                                    <li>Evasion and Anti-Forensics</li>
+                                    <li>Social Engineering Campaigns</li>
+                                    <li>Physical Security Assessments</li>
+                                </ul>
+                            </div>
+                            <div class="course-tools">
+                                <h4>Tools covered:</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">Cobalt Strike</span>
+                                    <span class="tool-tag">Empire</span>
+                                    <span class="tool-tag">Covenant</span>
+                                    <span class="tool-tag">PoshC2</span>
+                                    <span class="tool-tag">Sliver</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-label">Course Fee:</span>
+                                    <span class="price">$699</span>
+                                </div>
+                                <a href="red-team-operations.html" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Path Section -->
+        <section class="learning-path">
+            <div class="cbox">
+                <div class="section-header">
+                    <h2 class="section-title">Recommended Learning Path</h2>
+                    <p class="section-description">
+                        Follow our structured learning path to become a professional penetration tester
+                    </p>
+                </div>
+                <div class="path-timeline">
+                    <div class="path-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Foundation</h3>
+                            <p>Start with Network Security Fundamentals and Ethical Hacking Fundamentals</p>
+                            <span class="step-duration">3-4 months</span>
+                        </div>
+                    </div>
+                    <div class="path-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Specialization</h3>
+                            <p>Choose Web Application Security or Advanced Penetration Testing</p>
+                            <span class="step-duration">3-4 months</span>
+                        </div>
+                    </div>
+                    <div class="path-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Advanced Skills</h3>
+                            <p>Master Mobile Security Testing or Red Team Operations</p>
+                            <span class="step-duration">4-5 months</span>
+                        </div>
+                    </div>
+                    <div class="path-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Certification</h3>
+                            <p>Prepare for industry certifications (CEH, OSCP, CISSP)</p>
+                            <span class="step-duration">2-3 months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="cbox">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                        <span class="logo-text">CyberEnough</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering the next generation of cybersecurity professionals 
+                        through accessible penetration testing education by Rudra Dev.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Learn</h4>
+                        <a href="courses.html" class="footer-link">All Courses</a>
+                        <a href="courses.html" class="footer-link">Beginner Track</a>
+                        <a href="courses.html" class="footer-link">Advanced Track</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="about.html" class="footer-link">Our Team</a>
+                        <a href="about.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberEnough. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Penetration Testing - CyberEnough</title>
+    <meta name="description" content="Master advanced penetration testing methodologies, exploit development, and post-exploitation techniques used by professional pentesters.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                    <span class="logo-text">CyberEnough</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="terminal.html" class="nav-link">Test Terminal</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Course Header -->
+        <section class="course-detail-header">
+            <div class="container">
+                <div class="course-detail-content">
+                    <div class="course-breadcrumb">
+                        <a href="courses.html">Courses</a> / <span>Advanced Penetration Testing</span>
+                    </div>
+                    <h1 class="course-detail-title">Advanced Penetration Testing</h1>
+                    <p class="course-detail-description">
+                        Master advanced penetration testing methodologies, exploit development, 
+                        and post-exploitation techniques used by professional pentesters.
+                    </p>
+                    <div class="course-detail-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Level:</span>
+                            <span class="meta-value intermediate">Intermediate</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration:</span>
+                            <span class="meta-value">12 weeks</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Fee:</span>
+                            <span class="meta-value">Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Content -->
+        <section class="course-content">
+            <div class="container">
+                <div class="content-grid">
+                    
+                    <!-- Module 1 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 1: Advanced Reconnaissance and OSINT</h2>
+                        <div class="module-content">
+                            <p>Deep dive into advanced reconnaissance techniques and open-source intelligence gathering.</p>
+                            <div class="content-block">
+                                <h4>Advanced OSINT Techniques</h4>
+                                <div class="content-area">
+                                    <p><em> <p>Open-Source Intelligence (OSINT) is the art of gathering publicly available information to build a detailed picture of a target without direct interaction. In this section, you’ll master advanced OSINT techniques to uncover critical data for penetration testing, taking your reconnaissance skills to a professional level.</p>
+                    <p><strong>Key OSINT Techniques</strong></p>
+                    <ul>
+                        <li><strong>Dark Web Analysis</strong> - Explore dark web marketplaces and forums using tools like Tor Browser to find leaked credentials or target-related data.</li>
+                        <li><strong>Metadata Extraction</strong> - Analyze files (e.g., PDFs, images) for metadata like author names or GPS coordinates using tools like ExifTool.</li>
+                        <li><strong>Advanced Search Queries</strong> - Use Google dorks and specialized search engines (e.g., Shodan, Censys) to find exposed servers, IoT devices, or misconfigured systems.</li>
+                        <li><strong>Domain and Network Mapping</strong> - Use tools like Maltego to map relationships between domains, IPs, and organizations, revealing hidden infrastructure.</li>
+                    </ul>
+                    <p><strong>Practical Applications</strong></p>
+                    <p>You’ll learn to combine OSINT sources to profile a target comprehensively, such as identifying employee email patterns or discovering forgotten subdomains that might be vulnerable. Ethical considerations, like respecting privacy and avoiding unauthorized data collection, will be emphasized.</p>
+                    <p><strong>Hands-On Learning</strong></p>
+                    <p>In labs, you’ll use Maltego to map a target’s infrastructure, perform Google dorking to find exposed files, and extract metadata from sample documents. You’ll also simulate a dark web search in a controlled environment to locate leaked credentials.</p>
+                    <p><strong>Why This Matters</strong></p>
+                    <p>Advanced OSINT provides a wealth of actionable intelligence, enabling you to plan precise and effective penetration tests while staying within legal boundaries.</p></em></p>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <h4>Social Media Intelligence</h4>
+                                <div class="content-area">
+                                    <p><em><p>Social Media Intelligence (SOCMINT) leverages social platforms to gather insights about individuals, organizations, or technologies. This section teaches you how to use SOCMINT ethically to support penetration testing.</p>
+                    <p><strong>SOCMINT Techniques</strong></p>
+                    <ul>
+                        <li><strong>Profile Analysis</strong> - Extract employee details, roles, or technologies from platforms like LinkedIn or Twitter.</li>
+                        <li><strong>Network Mapping</strong> - Identify relationships between employees or partners to uncover potential entry points.</li>
+                        <li><strong>Content Analysis</strong> - Analyze posts for clues about software versions, project names, or security practices.</li>
+                        <li><strong>Geolocation Tracking</strong> - Use geotagged posts to pinpoint physical locations or events.</li>
+                    </ul>
+                    <p><strong>Ethical and Legal Considerations</strong></p>
+                    <p>You’ll learn to navigate privacy laws and ethical guidelines, ensuring SOCMINT is conducted with explicit permission and respects user rights.</p>
+                    <p><strong>Hands-On Learning</strong></p>
+                    <p>You’ll use tools like SpiderFoot to automate SOCMINT, analyze a mock organization’s social media presence, and create a target profile based on public posts. You’ll also practice writing a reconnaissance report summarizing your findings.</p>
+                    <p><strong>Why This Matters</strong></p>
+                    <p>SOCMINT uncovers human and organizational vulnerabilities, providing critical data for social engineering and other penetration testing strategies.</p></em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 2: Exploit Development and Buffer Overflows</h2>
+                        <div class="module-content">
+                            <p>Learn to develop custom exploits and understand memory corruption vulnerabilities.</p>
+                            <div class="content-block">
+                                <h4>Buffer Overflow Fundamentals</h4>
+                                <div class="content-area">
+                                    <p><em><p>Buffer overflows are a classic vulnerability that allows attackers to overwrite a program’s memory, potentially executing malicious code. This section introduces the concepts and techniques needed to understand and exploit these flaws.</p>
+                    <p><strong>What is a Buffer Overflow?</strong></p>
+                    <p>A buffer overflow occurs when a program writes more data to a buffer than it can hold, overwriting adjacent memory. This can crash the program or allow an attacker to control its execution flow.</p>
+                    <p><strong>Key Concepts</strong></p>
+                    <ul>
+                        <li><strong>Stack and Heap</strong> - Understand how programs store data in memory, with the stack handling function calls and the heap managing dynamic allocations.</li>
+                        <li><strong>Memory Layout</strong> - Learn about memory segments like the stack, heap, and code, and how they’re manipulated in overflows.</li>
+                        <li><strong>Return Address Overwrite</strong> - Overwrite a function’s return address to redirect execution to malicious code.</li>
+                    </ul>
+                    <p><strong>Exploitation Basics</strong></p>
+                    <p>You’ll study how to craft payloads to trigger overflows, using tools like GDB to debug and analyze memory. Common vulnerabilities include unsafe functions like <code>strcpy</code> in C programs.</p>
+                    <p><strong>Hands-On Learning</strong></p>
+                    <p>In labs, you’ll exploit a simple C program with a buffer overflow, overwrite the stack using GDB, and execute a basic shellcode in a controlled environment.</p>
+                    <p><strong>Why This Matters</strong></p>
+                    <p>Understanding buffer overflows is foundational for exploit development, enabling you to identify and test for memory corruption vulnerabilities.</p></em></p>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <h4>Exploit Development Process</h4>
+                                <div class="content-area">
+                                    <p><em><p>Building custom exploits requires a structured approach to identify, develop, and test vulnerabilities. This section covers the end-to-end process of creating reliable exploits.</p>
+                    <p><strong>Exploit Development Steps</strong></p>
+                    <ul>
+                        <li><strong>Fuzzing</strong> - Send random inputs to a program to trigger crashes, using tools like AFL (American Fuzzy Lop).</li>
+                        <li><strong>Crash Analysis</strong> - Analyze crashes with debuggers like GDB or WinDbg to identify exploitable conditions.</li>
+                        <li><strong>Payload Crafting</strong> - Write shellcode to perform actions like opening a shell or escalating privileges.</li>
+                        <li><strong>Bypassing Protections</strong> - Overcome defenses like ASLR (Address Space Layout Randomization) and DEP (Data Execution Prevention).</li>
+                    </ul>
+                    <p><strong>Tools and Techniques</strong></p>
+                    <p>You’ll use Python and tools like Metasploit to automate exploit development, and learn to write exploits for both Windows and Linux systems.</p>
+                    <p><strong>Hands-On Learning</strong></p>
+                    <p>You’ll develop a custom exploit for a vulnerable application, fuzz it to find a crash, craft a payload to gain a shell, and bypass basic protections like stack canaries in a lab environment.</p>
+                    <p><strong>Why This Matters</strong></p>
+                    <p>Exploit development equips you to test systems against advanced attacks, ensuring they’re secure against real-world threats.</p></em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 3: Post-Exploitation and Privilege Escalation</h2>
+                        <div class="module-content">
+                            <p>Master techniques for maintaining access and escalating privileges on compromised systems.</p>
+                            <div class="content-block">
+                                <h4>Windows Privilege Escalation</h4>
+                                <div class="content-area">
+                                    <p><em><p>Once you’ve gained initial access to a Windows system, privilege escalation allows you to gain higher-level permissions, like administrator access. This section covers techniques to achieve this.</p>
+                    <p><strong>Key Techniques</strong></p>
+                    <ul>
+                        <li><strong>Kernel Exploits</strong> - Exploit vulnerabilities in the Windows kernel to gain SYSTEM privileges.</li>
+                        <li><strong>Misconfigurations</strong> - Identify weak permissions, like writable service executables or unquoted service paths.</li>
+                        <li><strong>Credential Harvesting</strong> - Extract passwords or hashes from memory using tools like Mimikatz.</li>
+                        <li><strong>DLL Hijacking</strong> - Replace legitimate DLLs with malicious ones to escalate privileges.</li>
+                    </ul>
+                    <p><strong>Tools</strong></p>
+                    <p>Use Metasploit, PowerSploit, and WinPEAS to automate privilege escalation and identify vulnerabilities.</p>
+                    <p><strong>Hands-On Learning</strong></p>
+                    <p>In labs, you’ll exploit a misconfigured Windows service, use Mimikatz to dump credentials, and escalate to SYSTEM privileges on a test machine.</p>
+                    <p><strong>Why This Matters</strong></p>
+                    <p>Privilege escalation on Windows systems is critical for assessing the full impact of a breach and securing systems against advanced attackers.</p></em></p>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <h4>Linux Privilege Escalation</h4>
+                                <div class="content-area">
+                                    <p><em><p>Linux privilege escalation involves gaining root access on a compromised system. This section explores Linux-specific techniques and defenses.</p>
+                    <p><strong>Key Techniques</strong></p>
+                    <ul>
+                        <li><strong>Sudo Misconfigurations</strong> - Exploit overly permissive sudo rights to run commands as root.</li>
+                        <li><strong>Kernel Exploits</strong> - Use known vulnerabilities in the Linux kernel to gain elevated privileges.</li>
+                        <li><strong>File Permissions</strong> - Exploit writable system files or scripts (e.g., /etc/passwd) to escalate access.</li>
+                        <li><strong>Path Vulnerabilities</strong> - Manipulate PATH variables to execute malicious binaries.</li>
+                    </ul>
+                    <p><strong>Tools</strong></p>
+                    <p>Use LinPEAS, Enum4linux, and manual scripts to identify escalation vectors.</p>
+                    <p><strong>Hands-On Learning</strong></p>
+                    <p>You’ll exploit a sudo misconfiguration, use a kernel exploit to gain root, and analyze file permissions on a test Linux system.</p>
+                    <p><strong>Why This Matters</strong></p>
+                    <p>Linux systems are widely used in servers and cloud environments, making privilege escalation skills essential for securing critical infrastructure.</p></em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Enroll CTA -->
+        <section class="enroll-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Master Advanced Penetration Testing?</h2>
+                    <p>Take your cybersecurity skills to the next level with professional-grade techniques.</p>
+                    <div class="cta-buttons">
+                        <!-- <button class="btn btn-primary btn-large">Enroll Now - $499</button> -->
+                        <a href="courses.html" class="btn btn-secondary btn-large">View All Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                        <span class="logo-text">CyberEnough</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering the next generation of cybersecurity professionals 
+                        through accessible penetration testing education by Rudra Dev.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Learn</h4>
+                        <a href="courses.html" class="footer-link">All Courses</a>
+                        <a href="courses.html" class="footer-link">Beginner Track</a>
+                        <a href="courses.html" class="footer-link">Advanced Track</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="about.html" class="footer-link">Our Team</a>
+                        <a href="about.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberEnough. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

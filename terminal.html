@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Terminal - CyberEnough</title>
+    <meta name="description" content="Practice Linux commands in a simulated Kali Linux terminal environment. Perfect for learning cybersecurity tools and techniques.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                    <span class="logo-text">CyberEnough</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="terminal.html" class="nav-link active">Test Terminal</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Terminal Header -->
+        <section class="terminal-header">
+            <div class="cbox">
+                <div class="terminal-header-content">
+                    <h1 class="terminal-title">Kali Linux Terminal</h1>
+                    <p class="terminal-description">
+                        Practice Linux commands in a simulated Kali Linux environment. 
+                        Try commands like <code>ls</code>, <code>pwd</code>, <code>whoami</code>, or cybersecurity tools like <code>nmap</code>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terminal Interface -->
+        <section class="terminal-section">
+            <div class="cbox">
+                <div class="terminal-wrapper">
+                    <div class="terminal-window">
+                        <div class="terminal-titlebar">
+                            <div class="terminal-buttons">
+                                <span class="terminal-button close"></span>
+                                <span class="terminal-button minimize"></span>
+                                <span class="terminal-button maximize"></span>
+                            </div>
+                            <div class="terminal-title-text">Terminal - kali@kali:~</div>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-output" id="terminal-output">
+                                <div class="terminal-line">
+                                    <span class="terminal-prompt">┌──(kali㉿kali)-[~]</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="terminal-prompt">└─$ </span><span class="terminal-welcome">Welcome to Kali Linux Test Terminal!</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="terminal-info">Type 'help' for available commands or try basic Linux commands.</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="terminal-prompt">┌──(kali㉿kali)-[~]</span>
+                                </div>
+                            </div>
+                            <div class="terminal-input-line">
+                                <span class="terminal-prompt">└─$ </span>
+                                <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" autofocus>
+                                <span class="terminal-cursor">_</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terminal Info -->
+        <section class="terminal-info-section">
+            <div class="cbox">
+                <div class="terminal-info-content">
+                    <h2>Available Commands</h2>
+                    <div class="command-grid">
+                        <div class="command-category">
+                            <h3>Basic Linux</h3>
+                            <ul>
+                                <li><code>ls</code> - List directory contents</li>
+                                <li><code>cd</code> - Change current directory</li>
+                                <li><code>pwd</code> - Print working directory</li>
+                                <li><code>whoami</code> - Current user</li>
+                                <li><code>uname -a</code> - System information</li>
+                                <li><code>cat /etc/passwd</code> - View users</li>
+                            </ul>
+                        </div>
+                        <div class="command-category">
+                            <h3>Network Tools</h3>
+                            <ul>
+                                <li><code>nmap -sn 192.168.1.0/24</code> - Network scan</li>
+                                <li><code>netstat -tuln</code> - Network connections</li>
+                                <li><code>ifconfig</code> - Network interfaces</li>
+                                <li><code>ping google.com</code> - Network connectivity</li>
+                            </ul>
+                        </div>
+                        <div class="command-category">
+                            <h3>Security Tools</h3>
+                            <ul>
+                                <li><code>nikto -h target.com</code> - Web vulnerability scanner</li>
+                                <li><code>dirb http://target.com</code> - Directory brute force</li>
+                                <li><code>sqlmap --help</code> - SQL injection tool</li>
+                                <li><code>hydra -l admin -P passwords.txt ssh://target</code> - Password cracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="cbox">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                        <span class="logo-text">CyberEnough</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering the next generation of cybersecurity professionals 
+                        through accessible penetration testing education by Rudra Dev.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Learn</h4>
+                        <a href="courses.html" class="footer-link">All Courses</a>
+                        <a href="courses.html" class="footer-link">Beginner Track</a>
+                        <a href="courses.html" class="footer-link">Advanced Track</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="about.html" class="footer-link">Our Team</a>
+                        <a href="about.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberEnough. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="terminal.js"></script>
+</body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacking Fundamentals - CyberEnough</title>
+    <meta name="description"
+        content="Master the fundamentals of ethical hacking with hands-on labs and practical exercises. Perfect for beginners starting their cybersecurity journey.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                    <span class="logo-text">CyberEnough</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="terminal.html" class="nav-link">Test Terminal</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Course Header -->
+        <section class="course-detail-header">
+            <div class="container">
+                <div class="course-detail-content">
+                    <div class="course-breadcrumb">
+                        <a href="courses.html">Courses</a> / <span>Ethical Hacking Fundamentals</span>
+                    </div>
+                    <h1 class="course-detail-title">Ethical Hacking Fundamentals</h1>
+                    <p class="course-detail-description">
+                        Start your cybersecurity journey with this comprehensive introduction to ethical hacking.
+                        Learn reconnaissance, scanning, enumeration, and basic vulnerability assessment techniques.
+                    </p>
+                    <div class="course-detail-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Level:</span>
+                            <span class="meta-value beginner">Beginner</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration:</span>
+                            <span class="meta-value">8 weeks</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Fee:</span>
+                            <span class="meta-value">Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Content -->
+        <section class="course-content">
+            <div class="container">
+                <div class="content-grid">
+
+                    <!-- Module 1 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 1: Introduction to Cybersecurity and Ethical Hacking</h2>
+                        <div class="module-content">
+                            <p>This module provides a comprehensive foundation in cybersecurity principles and ethical
+                                hacking practices.</p>
+                            <h3>Learning Objectives:</h3>
+                            <ul>
+                                <li>Understand the fundamentals of cybersecurity</li>
+                                <li>Learn the difference between ethical and malicious hacking</li>
+                                <li>Explore cybersecurity frameworks and standards</li>
+                                <li>Study legal and ethical considerations in penetration testing</li>
+                            </ul>
+                            <h3>Content Blocks:</h3>
+                            <div class="content-block">
+                                <h4>What is Cybersecurity?</h4>
+                                <div class="content-area">
+                                    <!-- Markdown-like content can be added here -->
+                                    <p><em>
+                                            <div>
+                                                <p>Cybersecurity is the practice of protecting systems, networks, and
+                                                    data from unauthorized access, attacks, and damage. It’s the shield
+                                                    that keeps our digital world safe, from personal devices to global
+                                                    enterprises. In this section, you’ll dive into the core concepts of
+                                                    cybersecurity and why it’s critical in today’s hyper-connected
+                                                    world.</p>
+                                                <p><strong>The Pillars of Cybersecurity</strong></p>
+                                                <p>Cybersecurity rests on three key principles, often called the CIA
+                                                    triad:</p>
+                                                <ul>
+                                                    <li><strong>Confidentiality</strong> - Ensuring data is only
+                                                        accessible to authorized users. Think of encryption protecting
+                                                        your passwords.</li>
+                                                    <li><strong>Integrity</strong> - Keeping data accurate and
+                                                        unaltered. For example, checksums verify that files haven’t been
+                                                        tampered with.</li>
+                                                    <li><strong>Availability</strong> - Ensuring systems and data are
+                                                        accessible when needed. This means defending against
+                                                        denial-of-service (DoS) attacks.</li>
+                                                </ul>
+                                                <p><strong>Ethical Hacking vs. Malicious Hacking</strong></p>
+                                                <p>Ethical hacking involves using hacking techniques to identify and fix
+                                                    security weaknesses, with permission from system owners. Malicious
+                                                    hacking, on the other hand, aims to exploit vulnerabilities for
+                                                    harm, like stealing data or disrupting services. You’ll learn how
+                                                    ethical hackers operate within legal and ethical boundaries, using
+                                                    their skills to protect rather than destroy.</p>
+                                                <p><strong>Cybersecurity Frameworks</strong></p>
+                                                <p>Frameworks like NIST Cybersecurity Framework and ISO 27001 provide
+                                                    structured approaches to securing systems. You’ll explore how these
+                                                    frameworks guide organizations in identifying risks, protecting
+                                                    assets, detecting threats, responding to incidents, and recovering
+                                                    from attacks.</p>
+                                                <p><strong>Legal and Ethical Considerations</strong></p>
+                                                <p>Ethical hacking requires strict adherence to laws and ethics. You’ll
+                                                    study laws like the Computer Fraud and Abuse Act (CFAA) and GDPR,
+                                                    and learn how to obtain proper authorization before testing systems.
+                                                    We’ll cover ethical principles, like respecting user privacy and
+                                                    reporting findings responsibly.</p>
+                                                <p><strong>Hands-On Learning</strong></p>
+                                                <p>You’ll set up a virtual lab environment (using tools like VirtualBox)
+                                                    to practice safe hacking. You’ll also analyze real-world case
+                                                    studies, like a company recovering from a data breach, to understand
+                                                    the role of ethical hacking in cybersecurity.</p>
+                                                <p><strong>Why This Matters</strong></p>
+                                                <p>This foundational knowledge sets the stage for your ethical hacking
+                                                    journey, giving you the context and principles needed to protect
+                                                    digital systems. By the end, you’ll understand the “why” and “how”
+                                                    of ethical hacking.</p>
+                                        </em></p>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <h4>Types of Cybersecurity Threats</h4>
+                                <div class="content-area">
+                                    <!-- Markdown-like content can be added here -->
+                                    <p><em>
+                                            <p>Cybersecurity threats are evolving, and understanding them is key to
+                                                defending networks. This section covers the major types of threats
+                                                you’ll face as an ethical hacker and how they impact systems.</p>
+                                            <p><strong>Common Threat Types</strong></p>
+                                            <ul>
+                                                <li><strong>Malware</strong> - Malicious software like viruses, worms,
+                                                    ransomware, and spyware designed to harm or infiltrate systems.</li>
+                                                <li><strong>Phishing</strong> - Social engineering attacks that trick
+                                                    users into revealing sensitive information, like passwords.</li>
+                                                <li><strong>Denial-of-Service (DoS)</strong> - Attacks that overwhelm
+                                                    systems to disrupt availability, like flooding a website with
+                                                    traffic.</li>
+                                                <li><strong>Man-in-the-Middle (MitM)</strong> - Attackers intercept
+                                                    communication between two parties to steal data or manipulate
+                                                    messages.</li>
+                                                <li><strong>SQL Injection</strong> - Exploiting web application
+                                                    vulnerabilities to manipulate databases.</li>
+                                            </ul>
+                                            <p><strong>Threat Actors</strong></p>
+                                            <p>You’ll learn about different attackers, including script kiddies (using
+                                                pre-made tools), hacktivists (driven by ideology), cybercriminals
+                                                (seeking profit), and state-sponsored hackers (targeting governments or
+                                                industries).</p>
+                                            <p><strong>Impact of Threats</strong></p>
+                                            <p>Threats can lead to data breaches, financial losses, or reputational
+                                                damage. You’ll study real-world examples, like the Equifax breach, to
+                                                understand their consequences and how ethical hacking prevents them.</p>
+                                            <p><strong>Hands-On Learning</strong></p>
+                                            <p>In labs, you’ll simulate a phishing attack to see how it tricks users and
+                                                analyze malware samples in a sandbox environment. You’ll also map
+                                                threats to the CIA triad to understand their impact.</p>
+                                            <p><strong>Why This Matters</strong></p>
+                                            <p>Knowing your enemy is half the battle. This section prepares you to
+                                                recognize and counter threats, setting the foundation for your ethical
+                                                hacking skills.</p>
+                                        </em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 2: Information Gathering and Reconnaissance</h2>
+                        <div class="module-content">
+                            <p>Learn the art of information gathering - the first and most crucial phase of any
+                                penetration test.</p>
+                            <h3>Learning Objectives:</h3>
+                            <ul>
+                                <li>Master passive reconnaissance techniques</li>
+                                <li>Understand active reconnaissance methods</li>
+                                <li>Learn to use OSINT tools effectively</li>
+                                <li>Practice footprinting and enumeration</li>
+                            </ul>
+                            <div class="content-block">
+                                <h4>Passive Reconnaissance</h4>
+                                <div class="content-area">
+                                    <!-- Markdown-like content can be added here -->
+                                    <p><em>
+                                            <p>Passive reconnaissance is about gathering information without directly
+                                                interacting with the target system, keeping you stealthy. It’s like
+                                                researching a company before a job interview, but for ethical hacking.
+                                            </p>
+                                            <p><strong>OSINT (Open-Source Intelligence)</strong></p>
+                                            <p>OSINT involves collecting publicly available data from sources like
+                                                websites, social media, or public records. Tools like Maltego and Shodan
+                                                help you find information about a target’s domains, IP addresses, or
+                                                technologies.</p>
+                                            <p><strong>Techniques</strong></p>
+                                            <ul>
+                                                <li><strong>WHOIS Lookups</strong> - Discover domain ownership and
+                                                    registration details.</li>
+                                                <li><strong>Social Media Analysis</strong> - Identify employee names,
+                                                    roles, or technologies from platforms like LinkedIn.</li>
+                                                <li><strong>Website Footprinting</strong> - Analyze a target’s website
+                                                    for technologies (e.g., using Wappalyzer) or hidden directories.
+                                                </li>
+                                            </ul>
+                                            <p><strong>Ethical Considerations</strong></p>
+                                            <p>You’ll learn to respect privacy and legal boundaries, ensuring your
+                                                reconnaissance doesn’t cross into unauthorized access.</p>
+                                            <p><strong>Hands-On Learning</strong></p>
+                                            <p>In labs, you’ll use Maltego to map a target’s online presence, perform
+                                                WHOIS lookups, and analyze a website’s source code to identify
+                                                technologies. You’ll document your findings in a reconnaissance report.
+                                            </p>
+                                            <p><strong>Why This Matters</strong></p>
+                                            <p>Passive reconnaissance lays the groundwork for a successful penetration
+                                                test, helping you understand your target without raising alarms.</p>
+                                        </em></p>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <h4>Active Reconnaissance</h4>
+                                <div class="content-area">
+                                    <!-- Markdown-like content can be added here -->
+                                    <p><em>
+                                            <p>Active reconnaissance involves direct interaction with the target, like
+                                                scanning networks or probing systems. It’s riskier but provides deeper
+                                                insights.</p>
+                                            <p><strong>Techniques</strong></p>
+                                            <ul>
+                                                <li><strong>Network Scanning</strong> - Identify live hosts and open
+                                                    ports using tools like Nmap.</li>
+                                                <li><strong>Enumeration</strong> - Extract details like user accounts or
+                                                    services (e.g., SMB or FTP) from a system.</li>
+                                                <li><strong>Banner Grabbing</strong> - Collect version information from
+                                                    services to identify vulnerabilities.</li>
+                                            </ul>
+                                            <p><strong>Risks and Mitigation</strong></p>
+                                            <p>Active reconnaissance can trigger security alerts, so you’ll learn
+                                                stealth techniques like slow scanning and how to obtain explicit
+                                                permission before testing.</p>
+                                            <p><strong>Hands-On Learning</strong></p>
+                                            <p>You’ll perform active scans using Nmap to identify hosts and services,
+                                                enumerate users on a test server, and practice banner grabbing to find
+                                                outdated software versions.</p>
+                                            <p><strong>Why This Matters</strong></p>
+                                            <p>Active reconnaissance provides critical data for planning attacks,
+                                                helping you pinpoint vulnerabilities while staying within ethical
+                                                boundaries.</p>
+                                        </em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 3: Network Scanning with Nmap</h2>
+                        <div class="module-content">
+                            <p>Master the most powerful network discovery tool used by security professionals worldwide.
+                            </p>
+                            <h3>Learning Objectives:</h3>
+                            <ul>
+                                <li>Learn Nmap fundamentals and syntax</li>
+                                <li>Master different scanning techniques</li>
+                                <li>Understand service and OS detection</li>
+                                <li>Practice stealth scanning methods</li>
+                            </ul>
+                            <div class="content-block">
+                                <h4>Nmap Basics</h4>
+                                <div class="content-area">
+                                    <!-- Markdown-like content can be added here -->
+                                    <p><em>
+                                            <p>Nmap (Network Mapper) is the go-to tool for network scanning, used to
+                                                discover hosts, ports, services, and operating systems. This section
+                                                covers its core functionality and syntax.</p>
+                                            <p><strong>Nmap Fundamentals</strong></p>
+                                            <p>Nmap scans networks by sending packets and analyzing responses. Key
+                                                commands include:</p>
+                                            <ul>
+                                                <li><strong>Ping Scan (-sP)</strong> - Identifies live hosts.</li>
+                                                <li><strong>TCP SYN Scan (-sS)</strong> - Detects open ports without
+                                                    completing connections.</li>
+                                                <li><strong>Version Detection (-sV)</strong> - Identifies service
+                                                    versions.</li>
+                                            </ul>
+                                            <p><strong>Syntax</strong></p>
+                                            <p>You’ll learn Nmap’s command structure, like
+                                                <code>nmap -sS 192.168.1.0/24</code> to scan a subnet for open ports.
+                                            </p>
+                                            <p><strong>Hands-On Learning</strong></p>
+                                            <p>In labs, you’ll install Nmap, run basic scans on a test network, and
+                                                interpret results to identify live hosts and open ports.</p>
+                                            <p><strong>Why This Matters</strong></p>
+                                            <p>Nmap is a cornerstone of ethical hacking, providing the data needed to
+                                                plan penetration tests effectively.</p>
+                                </div></em></p>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <h4>Advanced Scanning Techniques</h4>
+                            <div class="content-area">
+                                <!-- Markdown-like content can be added here -->
+                                <p><em>
+                                        <p>Take your Nmap skills to the next level with advanced techniques for detailed
+                                            reconnaissance and stealth.</p>
+                                        <p><strong>Techniques</strong></p>
+                                        <ul>
+                                            <li><strong>OS Detection (-O)</strong> - Identifies operating systems based
+                                                on TCP/IP stack characteristics.</li>
+                                            <li><strong>Stealth Scanning</strong> - Uses techniques like SYN scanning or
+                                                fragment packets to avoid detection.</li>
+                                            <li><strong>Scripting Engine (NSE)</strong> - Runs scripts to detect
+                                                vulnerabilities or enumerate services.</li>
+                                        </ul>
+                                        <p><strong>Practical Applications</strong></p>
+                                        <p>You’ll learn to use NSE scripts for tasks like detecting outdated software or
+                                            enumerating SMB shares, and how to customize scans for specific targets.</p>
+                                        <p><strong>Hands-On Learning</strong></p>
+                                        <p>You’ll run advanced scans, like OS detection and NSE scripts, on a lab
+                                            network, and practice stealth techniques to minimize detection.</p>
+                                        <p><strong>Why This Matters</strong></p>
+                                        <p>Advanced Nmap skills let you gather precise data while staying covert,
+                                            crucial for effective penetration testing.</p>
+                                    </em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="content-module">
+                    <h2 class="module-title">Module 4: Vulnerability Scanning with OpenVAS</h2>
+                    <div class="module-content">
+                        <p>Learn to identify security vulnerabilities using automated scanning tools.</p>
+                        <h3>Learning Objectives:</h3>
+                        <ul>
+                            <li>Set up and configure OpenVAS</li>
+                            <li>Perform comprehensive vulnerability scans</li>
+                            <li>Analyze and interpret scan results</li>
+                            <li>Prioritize vulnerabilities by risk level</li>
+                        </ul>
+                        <div class="content-block">
+                            <h4>OpenVAS Setup and Configuration</h4>
+                            <div class="content-area">
+                                <!-- Markdown-like content can be added here -->
+                                <p><em>
+                                        <p>OpenVAS (Open Vulnerability Assessment System) is a powerful open-source tool
+                                            for scanning networks for vulnerabilities. This section covers its
+                                            installation and setup.</p>
+                                        <p><strong>Installation</strong></p>
+                                        <p>You’ll learn to install OpenVAS on a Linux system (e.g., Kali Linux),
+                                            configure its components (scanner, manager, and web interface), and update
+                                            its vulnerability database.</p>
+                                        <p><strong>Configuration</strong></p>
+                                        <p>Configure scan profiles, set target hosts, and customize settings like port
+                                            ranges or scan intensity to balance speed and accuracy.</p>
+                                        <p><strong>Hands-On Learning</strong></p>
+                                        <p>You’ll install OpenVAS, configure a scan profile, and run a test scan on a
+                                            lab network to identify vulnerabilities.</p>
+                                        <p><strong>Why This Matters</strong></p>
+                                        <p>Proper setup ensures OpenVAS delivers accurate results, forming the basis for
+                                            effective vulnerability management.</p>
+                                    </em></p>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <h4>Vulnerability Assessment Best Practices</h4>
+                            <div class="content-area">
+                                <!-- Markdown-like content can be added here -->
+                                <p><em>
+                                        <p>Learn how to conduct and interpret vulnerability scans to identify and
+                                            prioritize risks.</p>
+                                        <p><strong>Scanning Techniques</strong></p>
+                                        <p>Run full scans, targeted scans, or authenticated scans to detect
+                                            vulnerabilities like outdated software or misconfigurations.</p>
+                                        <p><strong>Analyzing Results</strong></p>
+                                        <p>You’ll learn to interpret OpenVAS reports, focusing on CVSS (Common
+                                            Vulnerability Scoring System) scores to prioritize risks. For example, a
+                                            CVSS score of 7+ indicates a critical vulnerability.</p>
+                                        <p><strong>Best Practices</strong></p>
+                                        <ul>
+                                            <li>Validate findings to avoid false positives.</li>
+                                            <li>Prioritize vulnerabilities based on impact and exploitability.</li>
+                                            <li>Document findings for remediation plans.</li>
+                                        </ul>
+                                        <p><strong>Hands-On Learning</strong></p>
+                                        <p>You’ll analyze a scan report, prioritize vulnerabilities, and create a
+                                            remediation plan for a test network.</p>
+                                        <p><strong>Why This Matters</strong></p>
+                                        <p>Effective vulnerability assessment helps organizations fix weaknesses before
+                                            attackers exploit them.</p>
+                                    </em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="content-module">
+                    <h2 class="module-title">Module 5: Web Application Security Basics</h2>
+                    <div class="module-content">
+                        <p>Introduction to web application security testing and common vulnerabilities.</p>
+                        <h3>Learning Objectives:</h3>
+                        <ul>
+                            <li>Understand web application architecture</li>
+                            <li>Learn about OWASP Top 10 vulnerabilities</li>
+                            <li>Practice manual testing techniques</li>
+                            <li>Use web application security tools</li>
+                        </ul>
+                        <div class="content-block">
+                            <h4>Web Application Architecture</h4>
+                            <div class="content-area">
+                                <!-- Markdown-like content can be added here -->
+                                <p><em>C<p>Web applications are prime targets for attackers, so understanding their
+                                            structure is key. This section covers how they work and where
+                                            vulnerabilities hide.</p>
+                                        <p><strong>Components</strong></p>
+                                        <ul>
+                                            <li><strong>Frontend</strong> - The user interface (HTML, CSS, JavaScript).
+                                            </li>
+                                            <li><strong>Backend</strong> - Servers and databases handling logic and data
+                                                (e.g., PHP, SQL).</li>
+                                            <li><strong>APIs</strong> - Interfaces for communication between components.
+                                            </li>
+                                        </ul>
+                                        <p><strong>Security Implications</strong></p>
+                                        <p>Each component can be exploited—frontend via cross-site scripting (XSS),
+                                            backend via SQL injection, or APIs via broken authentication.</p>
+                                        <p><strong>Hands-On Learning</strong></p>
+                                        <p>You’ll set up a test web application (e.g., DVWA) and map its architecture to
+                                            identify potential attack points.</p>
+                                        <p><strong>Why This Matters</strong></p>
+                                        <p>Understanding web application architecture helps you pinpoint vulnerabilities
+                                            and test effectively.</p>
+                                    </em></p>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <h4>Common Web Vulnerabilities</h4>
+                            <div class="content-area">
+                                <!-- Markdown-like content can be added here -->
+                                <p><em>
+                                        <p>Learn the OWASP Top 10 vulnerabilities that plague web applications.</p>
+                                        <p><strong>Key Vulnerabilities</strong></p>
+                                        <ul>
+                                            <li><strong>SQL Injection</strong> - Injecting malicious SQL queries to
+                                                manipulate databases.</li>
+                                            <li><strong>Cross-Site Scripting (XSS)</strong> - Injecting scripts into web
+                                                pages to steal data or hijack sessions.</li>
+                                            <li><strong>Broken Authentication</strong> - Exploiting weak login systems
+                                                to gain unauthorized access.</li>
+                                            <li><strong>Insecure Deserialization</strong> - Manipulating serialized data
+                                                to execute code.</li>
+                                        </ul>
+                                        <p><strong>Testing Techniques</strong></p>
+                                        <p>You’ll learn manual testing (e.g., crafting SQL queries) and automated tools
+                                            (e.g., Burp Suite) to find these vulnerabilities.</p>
+                                        <p><strong>Hands-On Learning</strong></p>
+                                        <p>You’ll test a vulnerable web app for XSS and SQL injection, using tools like
+                                            Burp Suite to intercept and manipulate requests.</p>
+                                        <p><strong>Why This Matters</strong></p>
+                                        <p>Web vulnerabilities are common attack vectors, and mastering their detection
+                                            is critical for ethical hackers.</p>
+                                    </em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="content-module">
+                    <h2 class="module-title">Module 6: Social Engineering Techniques</h2>
+                    <div class="module-content">
+                        <p>Learn the human element of cybersecurity - often the weakest link in any security system.</p>
+                        <h3>Learning Objectives:</h3>
+                        <ul>
+                            <li>Understand social engineering psychology</li>
+                            <li>Learn common attack vectors</li>
+                            <li>Practice ethical social engineering</li>
+                            <li>Develop security awareness programs</li>
+                        </ul>
+                        <div class="content-block">
+                            <h4>Psychology of Social Engineering</h4>
+                            <div class="content-area">
+                                <!-- Markdown-like content can be added here -->
+                                <p><em>
+                                        <p>Social engineering exploits human psychology to bypass technical defenses.
+                                            This section explores why it works and how to use it ethically.</p>
+                                        <p><strong>Psychological Principles</strong></p>
+                                        <ul>
+                                            <li><strong>Authority</strong> - Attackers pose as trusted figures (e.g., IT
+                                                staff) to gain compliance.</li>
+                                            <li><strong>Urgency</strong> - Creating time pressure to trick users into
+                                                acting quickly.</li>
+                                            <li><strong>Trust</strong> - Building rapport to lower defenses.</li>
+                                        </ul>
+                                        <p><strong>Ethical Use</strong></p>
+                                        <p>You’ll learn to conduct social engineering tests with permission to identify
+                                            weak points in an organization’s security culture.</p>
+                                        <p><strong>Hands-On Learning</strong></p>
+                                        <p>You’ll simulate a phishing campaign in a lab to see how users respond and
+                                            analyze psychological triggers.</p>
+                                        <p><strong>Why This Matters</strong></p>
+                                        <p>Humans are often the weakest link, and understanding social engineering helps
+                                            you strengthen this vulnerability.</p>
+                                    </em></p>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <h4>Defensive Strategies</h4>
+                            <div class="content-area">
+                                <!-- Markdown-like content can be added here -->
+                                <p><em>
+                                        <p>Learn to protect against social engineering through awareness and policies.
+                                        </p>
+                                        <p><strong>Strategies</strong></p>
+                                        <ul>
+                                            <li><strong>Training</strong> - Educate employees on recognizing phishing
+                                                and pretexting.</li>
+                                            <li><strong>Policies</strong> - Implement verification processes for
+                                                sensitive requests.</li>
+                                            <li><strong>Simulations</strong> - Run mock attacks to test employee
+                                                awareness.</li>
+                                        </ul>
+                                        <p><strong>Hands-On Learning</strong></p>
+                                        <p>You’ll design a security awareness program and run a mock phishing test to
+                                            measure its effectiveness.</p>
+                                        <p><strong>Why This Matters</strong></p>
+                                        <p>Effective defenses reduce the success rate of social engineering attacks,
+                                            strengthening overall security.</p>
+                                    </em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 7 -->
+                <div class="content-module">
+                    <h2 class="module-title">Module 7: Report Writing and Documentation</h2>
+                    <div class="module-content">
+                        <p>Learn to communicate your findings effectively to technical and non-technical audiences.</p>
+                        <h3>Learning Objectives:</h3>
+                        <ul>
+                            <li>Understand penetration testing report structure</li>
+                            <li>Learn to write executive summaries</li>
+                            <li>Practice technical documentation</li>
+                            <li>Create actionable recommendations</li>
+                        </ul>
+                        <div class="content-block">
+                            <h4>Report Structure and Components</h4>
+                            <div class="content-area">
+                                <!-- Markdown-like content can be added here -->
+                                <p><em>
+                                        <p>A penetration testing report communicates your findings clearly and
+                                            professionally. This section covers its key components.</p>
+                                        <p><strong>Structure</strong></p>
+                                        <ul>
+                                            <li><strong>Executive Summary</strong> - A high-level overview for
+                                                non-technical stakeholders.</li>
+                                            <li><strong>Technical Findings</strong> - Detailed descriptions of
+                                                vulnerabilities, including evidence and impact.</li>
+                                            <li><strong>Recommendations</strong> - Actionable steps to fix issues.</li>
+                                            <li><strong>Appendices</strong> - Supporting data like scan logs or
+                                                screenshots.</li>
+                                        </ul>
+                                        <p><strong>Hands-On Learning</strong></p>
+                                        <p>You’ll write a sample report based on a mock penetration test, including all
+                                            components.</p>
+                                        <p><strong>Why This Matters</strong></p>
+                                        <p>A well-structured report ensures your findings lead to action, improving
+                                            security.</p>
+                                    </em></p>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <h4>Writing Effective Recommendations</h4>
+                            <div class="content-area">
+                                <!-- Markdown-like content can be added here -->
+                                <p><em>
+                                        <p>Recommendations turn findings into solutions. This section teaches you to
+                                            craft clear, actionable advice.</p>
+                                        <p><strong>Best Practices</strong></p>
+                                        <ul>
+                                            <li>Be specific (e.g., “Update Apache to version 2.4.57”).</li>
+                                            <li>Prioritize fixes based on risk.</li>
+                                            <li>Tailor advice to the audience (technical vs. management).</li>
+                                        </ul>
+                                        <p><strong>Hands-On Learning</strong></p>
+                                        <p>You’ll create recommendations for a sample vulnerability report, addressing
+                                            both technical and business audiences.</p>
+                                        <p><strong>Why This Matters</strong></p>
+                                        <p>Effective recommendations drive remediation, making your work impactful.</p>
+                                    </em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <!-- Enroll CTA -->
+        <section class="enroll-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Ethical Hacking Journey?</h2>
+                    <p>Join this comprehensive course and learn the fundamentals of ethical hacking from the ground up.
+                    </p>
+                    <div class="cta-buttons">
+                        <!-- <button class="btn btn-primary btn-large">Enroll Now</button> -->
+                        <a href="courses.html" class="btn btn-secondary btn-large">View All Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                        <span class="logo-text">CyberEnough</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering the next generation of cybersecurity professionals
+                        through accessible penetration testing education by Rudra Dev.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Learn</h4>
+                        <a href="courses.html" class="footer-link">All Courses</a>
+                        <a href="courses.html" class="footer-link">Beginner Track</a>
+                        <a href="courses.html" class="footer-link">Advanced Track</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="about.html" class="footer-link">Our Team</a>
+                        <a href="about.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberEnough. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

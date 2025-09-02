@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Security Fundamentals - CyberEnough</title>
+    <meta name="description"
+        content="Understand network security concepts, protocols, and defensive mechanisms. Perfect foundation for aspiring cybersecurity professionals.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                    <span class="logo-text">CyberEnough</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="terminal.html" class="nav-link">Test Terminal</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Course Header -->
+        <section class="course-detail-header">
+            <div class="container">
+                <div class="course-detail-content">
+                    <div class="course-breadcrumb">
+                        <a href="courses.html">Courses</a> / <span>Network Security Fundamentals</span>
+                    </div>
+                    <h1 class="course-detail-title">Network Security Fundamentals</h1>
+                    <p class="course-detail-description">
+                        Understand network security concepts, protocols, and defensive mechanisms.
+                        Perfect foundation for aspiring cybersecurity professionals.
+                    </p>
+                    <div class="course-detail-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Level:</span>
+                            <span class="meta-value beginner">Beginner</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration:</span>
+                            <span class="meta-value">6 weeks</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Fee:</span>
+                            <span class="meta-value">Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Content -->
+        <section class="course-content">
+            <div class="container">
+                <div class="content-grid">
+
+                    <!-- Module 1 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 1: Network Architecture and Protocols</h2>
+                        <div class="module-content">
+                            <p>Build a solid foundation in network fundamentals and security protocols.</p>
+                            <div class="content-block">
+                                <h4>OSI Model and TCP/IP Stack</h4>
+                                <div class="content-area">
+                                    <p><em><p>Networks are the backbone of modern communication, and understanding how they work is your first step toward mastering network security. In this section, we’ll dive deep into two foundational frameworks: the OSI Model and the TCP/IP Stack. These models are like architectural blueprints for how data moves across networks, from your smartphone to a server halfway across the world. By the end, you’ll understand how networks operate, where vulnerabilities lurk, and how to protect them.</p>
+
+<p><strong>The OSI Model: A Seven-Layer Framework</strong></p>
+<p>The OSI (Open Systems Interconnection) Model, developed by the International Organization for Standardization, breaks down network communication into seven distinct layers. Each layer handles a specific part of the process, making it easier to understand and troubleshoot networks. Here’s a detailed look at each layer:</p>
+<ul>
+    <li><strong>Layer 1: Physical Layer</strong> - This is the hardware layer, dealing with cables, switches, and electrical signals. It’s where bits (0s and 1s) are transmitted over physical media like Ethernet cables or Wi-Fi signals. Security risks here include physical tampering (e.g., someone plugging a malicious device into your network). You’ll learn how to secure physical access points, like locking server rooms.</li>
+    <li><strong>Layer 2: Data Link Layer</strong> - This layer handles communication between devices on the same network, using MAC addresses. It’s responsible for error detection and framing data into packets. Vulnerabilities include MAC spoofing, where attackers pretend to be a trusted device. We’ll explore defenses like port security on switches.</li>
+    <li><strong>Layer 3: Network Layer</strong> - This layer manages routing, using IP addresses to send data across different networks. It’s where routers operate, deciding the best path for data. Security threats include IP spoofing and routing attacks. You’ll learn about secure routing protocols and IP address filtering.</li>
+    <li><strong>Layer 4: Transport Layer</strong> - Responsible for reliable data delivery, this layer uses protocols like TCP and UDP. TCP ensures data arrives correctly, while UDP prioritizes speed. Attacks like SYN flooding target this layer. You’ll study how to configure TCP settings for security and monitor for anomalies.</li>
+    <li><strong>Layer 5: Session Layer</strong> - This layer manages sessions between applications, ensuring data streams are maintained. Weak session management can lead to session hijacking. You’ll learn about session timeouts and secure authentication.</li>
+    <li><strong>Layer 6: Presentation Layer</strong> - This layer translates data into a format the application layer can use, handling encryption and compression. Insecure encryption (e.g., outdated SSL) is a common vulnerability. You’ll explore modern encryption standards like TLS.</li>
+    <li><strong>Layer 7: Application Layer</strong> - The top layer, where user applications (like browsers) interact with the network. Threats include malware and phishing. You’ll learn about securing applications with HTTPS and input validation.</li>
+</ul>
+
+<p><strong>The TCP/IP Stack: The Internet’s Blueprint</strong></p>
+<p>The TCP/IP Stack is a practical, four-layer model that powers the internet. It simplifies the OSI Model but covers similar concepts. Here’s how it works:</p>
+<ul>
+    <li><strong>Link Layer</strong> - Combines the OSI’s Physical and Data Link layers, handling hardware communication and local network traffic. You’ll learn about Ethernet and Wi-Fi security, like WPA3 for wireless networks.</li>
+    <li><strong>Internet Layer</strong> - Equivalent to the OSI’s Network layer, this uses IP (IPv4 or IPv6) to route data across networks. You’ll study IP addressing, subnetting, and defenses against attacks like IP fragmentation.</li>
+    <li><strong>Transport Layer</strong> - Like the OSI’s Transport layer, it uses TCP and UDP for data delivery. You’ll explore how TCP’s three-way handshake works and how to mitigate denial-of-service (DoS) attacks.</li>
+    <li><strong>Application Layer</strong> - Combines the OSI’s Session, Presentation, and Application layers, handling user-facing protocols like HTTP and DNS. You’ll learn to secure these with encryption and authentication.</li>
+</ul>
+
+<p><strong>Security Across the Layers</strong></p>
+<p>Each layer has unique vulnerabilities, but also specific defenses. For example, at the Physical layer, you might use tamper-proof hardware, while at the Application layer, you’d implement secure coding practices. You’ll explore real-world attacks, like ARP spoofing (Data Link) or SQL injection (Application), and how to counter them with tools like packet analyzers (e.g., Wireshark) and intrusion detection systems.</p>
+
+<p><strong>Hands-On Learning</strong></p>
+<p>This section includes practical exercises to solidify your understanding. You’ll analyze network traffic using Wireshark to see how data moves through each layer, simulate a simple IP spoofing attack in a lab environment, and configure basic security measures like MAC filtering. By mapping real network processes to the OSI and TCP/IP models, you’ll gain a clear picture of how networks function and where to apply security.</p>
+
+<p><strong>Why This Matters</strong></p>
+<p>Mastering the OSI Model and TCP/IP Stack gives you a mental map of networking, essential for identifying and mitigating security risks. Whether you’re troubleshooting a network issue or defending against a cyberattack, these models are your guide. By the end of this section, you’ll be ready to tackle network security challenges with confidence!</p>
+
+<p><strong>What You’ll Learn:</strong></p>
+<ul>
+    <li>The seven layers of the OSI Model and their roles in networking.</li>
+    <li>The four layers of the TCP/IP Stack and how they power the internet.</li>
+    <li>Common security vulnerabilities at each layer and how to defend against them.</li>
+    <li>Practical skills like analyzing network traffic and configuring basic security settings.</li>
+</ul></em></p>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <h4>Network Protocols and Security</h4>
+                                <div class="content-area">
+                                    <p><em><p>Network protocols are the rules that let devices communicate, like a universal language for the internet. In this section, you’ll explore key protocols, how they work, the risks they face, and how to secure them. This is critical knowledge for any cybersecurity pro, as protocols are both the backbone of networks and prime targets for attackers.</p>
+
+<p><strong>What Are Network Protocols?</strong></p>
+<p>Protocols define how data is formatted, transmitted, and received. Think of them as the etiquette of network communication. Here are the key protocols you’ll study:</p>
+<ul>
+    <li><strong>HTTP/HTTPS</strong> - HyperText Transfer Protocol (HTTP) powers web browsing, while HTTPS adds encryption via TLS. HTTP is vulnerable to eavesdropping, so HTTPS is critical for secure browsing.</li>
+    <li><strong>DNS</strong> - Domain Name System translates domain names (like google.com) into IP addresses. DNS spoofing can redirect users to malicious sites.</li>
+    <li><strong>FTP/SFTP</strong> - File Transfer Protocol (FTP) transfers files, but it’s unencrypted. Secure FTP (SFTP) uses SSH for secure transfers.</li>
+    <li><strong>SMTP/POP3/IMAP</strong> - These email protocols (Simple Mail Transfer Protocol, Post Office Protocol, and Internet Message Access Protocol) handle sending and receiving emails. Unencrypted email can expose sensitive data.</li>
+    <li><strong>ICMP</strong> - Internet Control Message Protocol is used for diagnostics (e.g., ping). It’s often exploited in ping flood attacks.</li>
+</ul>
+
+<p><strong>Vulnerabilities in Protocols</strong></p>
+<p>Each protocol has weaknesses that hackers exploit. For example:</p>
+<ul>
+    <li><strong>HTTP</strong> - Without HTTPS, data is sent in plain text, making it easy to intercept (e.g., via man-in-the-middle attacks).</li>
+    <li><strong>DNS</strong> - DNS cache poisoning can redirect users to fake websites. DNSSEC (Domain Name System Security Extensions) helps prevent this.</li>
+    <li><strong>FTP</strong> - Unencrypted credentials can be sniffed. SFTP or FTPS (FTP over TLS) mitigates this.</li>
+    <li><strong>SMTP</strong> - Email spoofing allows attackers to send fake emails. SPF, DKIM, and DMARC are defenses to verify senders.</li>
+    <li><strong>ICMP</strong> - Ping floods can overwhelm networks, a type of DoS attack. Limiting ICMP traffic can help.</li>
+</ul>
+
+<p><strong>Securing Protocols</strong></p>
+<p>You’ll learn practical ways to secure these protocols:</p>
+<ul>
+    <li><strong>Encryption</strong> - Use HTTPS, SFTP, or TLS-enabled email to encrypt data in transit.</li>
+    <li><strong>Authentication</strong> - Implement strong credentials and multi-factor authentication (MFA) for protocols like FTP.</li>
+    <li><strong>Configuration</strong> - Harden protocol settings, like disabling unused services or restricting ICMP traffic.</li>
+    <li><strong>Monitoring</strong> - Use tools like Wireshark to detect suspicious protocol activity, such as unexpected DNS queries.</li>
+</ul>
+
+<p><strong>Hands-On Learning</strong></p>
+<p>This section includes labs to bring protocols to life. You’ll set up a secure HTTPS website using a free TLS certificate, simulate a DNS spoofing attack in a controlled environment, and configure an SFTP server. You’ll also analyze protocol traffic with Wireshark to identify vulnerabilities, like unencrypted FTP sessions, and apply fixes.</p>
+
+<p><strong>Why This Matters</strong></p>
+<p>Protocols are the lifeblood of networks, but they’re also entry points for attacks. Understanding their mechanics and securing them is a core cybersecurity skill. By the end of this section, you’ll be able to identify risky protocols, apply security measures, and troubleshoot protocol-related issues.</p>
+
+<p><strong>What You’ll Learn:</strong></p>
+<ul>
+    <li>Key network protocols (HTTP, DNS, FTP, etc.) and their roles.</li>
+    <li>Common protocol vulnerabilities and attack techniques.</li>
+    <li>Practical security measures, like encryption and authentication.</li>
+    <li>Hands-on skills in configuring and monitoring protocols.</li>
+</ul></em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 2: Firewalls and Intrusion Detection Systems</h2>
+                        <div class="module-content">
+                            <p>Learn about network security devices and how they protect against threats.</p>
+                            <div class="content-block">
+                                <h4>Firewall Technologies</h4>
+                                <div class="content-area">
+                                    <p><em>
+<p>Firewalls are your network’s gatekeepers, controlling who gets in and out. In this section, you’ll master firewall technologies, from basic setups to advanced systems, and learn how they protect networks from threats. Think of firewalls as the bouncers of your network, checking every packet’s ID before letting it through.</p>
+
+<p><strong>What Are Firewalls?</strong></p>
+<p>A firewall is a hardware or software device that filters network traffic based on predefined rules. It sits between your network and the outside world, blocking malicious traffic like malware, hackers, or unauthorized access attempts. Firewalls operate at different OSI layers, depending on their type:</p>
+<ul>
+    <li><strong>Packet-Filtering Firewalls</strong> (Layer 3) - These inspect packet headers (e.g., IP addresses, ports) and allow or block based on rules. They’re fast but basic, missing deeper threats like application-layer attacks.</li>
+    <li><strong>Stateful Inspection Firewalls</strong> (Layer 4) - These track the state of connections (e.g., established TCP sessions), offering more context than packet-filtering. They’re common in small networks.</li>
+    <li><strong>Application-Layer Firewalls</strong> (Layer 7) - Also called proxy firewalls, these inspect application data (e.g., HTTP requests). They’re slower but great for blocking sophisticated attacks.</li>
+    <li><strong>Next-Generation Firewalls (NGFW)</strong> - These combine packet filtering, stateful inspection, and application-layer analysis with features like intrusion prevention and deep packet inspection (DPI).</li>
+</ul>
+
+<p><strong>How Firewalls Protect Networks</strong></p>
+<p>Firewalls enforce security policies by allowing or denying traffic. For example, you might allow port 80 (HTTP) for web traffic but block port 23 (Telnet) to prevent insecure access. They protect against:</p>
+<ul>
+    <li><strong>Unauthorized Access</strong> - Blocking external devices from accessing internal servers.</li>
+    <li><strong>Malware</strong> - Stopping malicious packets from spreading viruses.</li>
+    <li><strong>DoS Attacks</strong> - Limiting excessive traffic to prevent network overload.</li>
+</ul>
+
+<p><strong>Configuring Firewalls</strong></p>
+<p>You’ll learn to create firewall rules, such as:</p>
+<ul>
+    <li>Allowing specific IP ranges (e.g., your company’s network).</li>
+    <li>Blocking risky ports (e.g., port 445, often used by ransomware).</li>
+    <li>Setting up DMZ (demilitarized zone) rules for public-facing servers.</li>
+</ul>
+<p>We’ll also cover firewall management, including logging, monitoring, and updating rules to adapt to new threats.</p>
+
+<p><strong>Hands-On Learning</strong></p>
+<p>In labs, you’ll configure a software firewall (e.g., pfSense or Windows Defender Firewall) to protect a small network. You’ll create rules to block unauthorized access, simulate a DoS attack to test your rules, and analyze firewall logs to identify threats. You’ll also explore NGFW features like DPI using open-source tools.</p>
+
+<p><strong>Why This Matters</strong></p>
+<p>Firewalls are a cornerstone of network security, and knowing how to deploy and manage them is essential. This section equips you with practical skills to design and maintain firewall defenses, preparing you for real-world cybersecurity roles.</p>
+
+<p><strong>What You’ll Learn:</strong></p>
+<ul>
+    <li>The types of firewalls and their strengths.</li>
+    <li>How to create and manage firewall rules.</li>
+    <li>Practical applications in securing networks.</li>
+    <li>Hands-on experience with firewall configuration and monitoring.</li>
+</ul></em></p>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <h4>IDS/IPS Implementation</h4>
+                                <div class="content-area">
+                                    <p><em>
+<p>Intrusion Detection and Prevention Systems (IDS/IPS) are your network’s security cameras, constantly watching for suspicious activity and stopping threats in real-time. In this section, you’ll learn how IDS and IPS work, how to implement them, and how they complement firewalls to keep networks safe.</p>
+
+<p><strong>What Are IDS and IPS?</strong></p>
+<p>An IDS (Intrusion Detection System) monitors network traffic for signs of malicious activity, like unusual patterns or known attack signatures. It alerts administrators but doesn’t block traffic. An IPS (Intrusion Prevention System) goes further, actively blocking threats. Both operate at various OSI layers, analyzing packets or application data.</p>
+<ul>
+    <li><strong>Network-Based IDS/IPS (NIDS/NIPS)</strong> - Monitors entire network segments, detecting attacks like port scans or malware.</li>
+    <li><strong>Host-Based IDS/IPS (HIDS/HIPS)</strong> - Runs on individual devices, watching for suspicious activity like file changes.</li>
+</ul>
+
+<p><strong>How IDS/IPS Work</strong></p>
+<p>IDS/IPS use two main detection methods:</p>
+<ul>
+    <li><strong>Signature-Based Detection</strong> - Matches traffic against a database of known attack patterns (e.g., a specific malware signature).</li>
+    <li><strong>Anomaly-Based Detection</strong> - Identifies deviations from normal traffic patterns, catching new or unknown threats.</li>
+</ul>
+<p>IPS can block threats by dropping packets, resetting connections, or redirecting traffic. Popular tools include Snort, Suricata, and commercial solutions like Cisco Secure IPS.</p>
+
+<p><strong>Implementing IDS/IPS</strong></p>
+<p>Setting up an IDS/IPS involves:</p>
+<ul>
+    <li><strong>Sensor Placement</strong> - Positioning sensors at key network points, like between your internal network and the internet.</li>
+    <li><strong>Rule Configuration</strong> - Writing rules to detect specific threats, like SQL injection attempts or brute-force attacks.</li>
+    <li><strong>Alert Management</strong> - Analyzing alerts to distinguish real threats from false positives.</li>
+    <li><strong>Tuning</strong> - Adjusting rules to reduce false positives and optimize performance.</li>
+</ul>
+
+<p><strong>Hands-On Learning</strong></p>
+<p>In labs, you’ll install an open-source IDS/IPS like Snort, configure rules to detect common attacks (e.g., a port scan), and analyze alerts. You’ll simulate attacks in a safe environment to see how IPS blocks them and practice tuning rules to balance security and performance.</p>
+
+<p><strong>Why This Matters</strong></p>
+<p>IDS/IPS catch threats that firewalls miss, making them critical for layered security. This section prepares you to deploy and manage these systems, giving you skills to protect networks from advanced attacks.</p>
+
+<p><strong>What You’ll Learn:</strong></p>
+<ul>
+    <li>The differences between IDS and IPS and their roles.</li>
+    <li>How to install and configure IDS/IPS tools.</li>
+    <li>Techniques for analyzing and responding to alerts.</li>
+    <li>Hands-on experience with IDS/IPS deployment and tuning.</li>
+</ul></em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Enroll CTA -->
+        <section class="enroll-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Start Your Network Security Journey</h2>
+                    <p>Build a strong foundation in network security concepts and defensive technologies.</p>
+                    <div class="cta-buttons">
+                        <a href="courses.html" class="btn btn-secondary btn-large">View All Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                        <span class="logo-text">CyberEnough</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering the next generation of cybersecurity professionals
+                        through accessible penetration testing education by Rudra Dev.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Learn</h4>
+                        <a href="courses.html" class="footer-link">All Courses</a>
+                        <a href="courses.html" class="footer-link">Beginner Track</a>
+                        <a href="courses.html" class="footer-link">Advanced Track</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="about.html" class="footer-link">Our Team</a>
+                        <a href="about.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberEnough. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00cc6a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle with glow effect -->
+  <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" filter="url(#glow)" opacity="0.1"/>
+  
+  <!-- Main shield shape -->
+  <path d="M20 2L32 8V18C32 26 26 32 20 38C14 32 8 26 8 18V8L20 2Z" 
+        fill="none" 
+        stroke="url(#logoGradient)" 
+        stroke-width="2" 
+        stroke-linejoin="round"/>
+  
+  <!-- Inner circuit pattern -->
+  <g stroke="url(#logoGradient)" stroke-width="1.5" fill="none">
+    <!-- Central node -->
+    <circle cx="20" cy="20" r="2" fill="url(#logoGradient)"/>
+    
+    <!-- Circuit lines -->
+    <path d="M20 15V18"/>
+    <path d="M20 22V25"/>
+    <path d="M15 20H18"/>
+    <path d="M22 20H25"/>
+    
+    <!-- Corner connections -->
+    <path d="M16 16L18 18"/>
+    <path d="M24 16L22 18"/>
+    <path d="M16 24L18 22"/>
+    <path d="M24 24L22 22"/>
+    
+    <!-- Small nodes at endpoints -->
+    <circle cx="20" cy="15" r="1" fill="url(#logoGradient)"/>
+    <circle cx="20" cy="25" r="1" fill="url(#logoGradient)"/>
+    <circle cx="15" cy="20" r="1" fill="url(#logoGradient)"/>
+    <circle cx="25" cy="20" r="1" fill="url(#logoGradient)"/>
+  </g>
+  
+  <!-- Binary code pattern around the shield -->
+  <g font-family="monospace" font-size="4" fill="url(#logoGradient)" opacity="0.6">
+    <text x="12" y="8" transform="rotate(-20 12 8)">101</text>
+    <text x="28" y="8" transform="rotate(20 28 8)">010</text>
+    <text x="6" y="24" transform="rotate(-45 6 24)">11</text>
+    <text x="34" y="24" transform="rotate(45 34 24)">01</text>
+    <text x="20" y="36" text-anchor="middle" transform="rotate(0 20 36)">1001</text>
+  </g>
+  
+  <!-- Scanning line animation -->
+  <line x1="8" y1="12" x2="32" y2="12" stroke="url(#logoGradient)" stroke-width="0.5" opacity="0.8">
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      values="0,0; 0,16; 0,0"
+      dur="3s"
+      repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.8; 0.3; 0.8"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </line>
+</svg>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Team Operations - CyberEnough</title>
+    <meta name="description"
+        content="Master advanced adversarial tactics and techniques used in red team engagements. Learn to think like an attacker and simulate advanced persistent threats.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                    <span class="logo-text">CyberEnough</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="terminal.html" class="nav-link">Test Terminal</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Course Header -->
+        <section class="course-detail-header">
+            <div class="container">
+                <div class="course-detail-content">
+                    <div class="course-breadcrumb">
+                        <a href="courses.html">Courses</a> / <span>Red Team Operations</span>
+                    </div>
+                    <h1 class="course-detail-title">Red Team Operations</h1>
+                    <p class="course-detail-description">
+                        Master advanced adversarial tactics and techniques used in red team engagements.
+                        Learn to think like an attacker and simulate advanced persistent threats.
+                    </p>
+                    <div class="course-detail-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Level:</span>
+                            <span class="meta-value advanced">Advanced</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Duration:</span>
+                            <span class="meta-value">14 weeks</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Fee:</span>
+                            <span class="meta-value">Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Content -->
+        <section class="course-content">
+            <div class="container">
+                <div class="content-grid">
+
+                    <!-- Module 1 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 1: Red Team Methodology and Planning</h2>
+                        <div class="module-content">
+                            <p>Learn the strategic approach to red team operations and engagement planning.</p>
+                            <div class="content-block">
+                                <h4>Red Team vs Penetration Testing</h4>
+                                <div class="content-area">
+                                    <p><em>
+                                            <p>Learn the strategic approach to red team operations and engagement
+                                                planning.</p>
+
+                                            <div>
+                                                <h3>Red Team vs Penetration Testing</h3>
+                                                <p>Red team operations and penetration testing both aim to improve
+                                                    security, but their approaches differ significantly. This section
+                                                    explores the distinctions, goals, and methodologies of red teaming,
+                                                    equipping you to simulate real-world adversarial attacks.</p>
+                                                <p><strong>Key Differences</strong></p>
+                                                <ul>
+                                                    <li><strong>Scope</strong> - Penetration testing focuses on specific
+                                                        systems or vulnerabilities with a defined scope, while red
+                                                        teaming simulates a full-spectrum attack, targeting an entire
+                                                        organization’s defenses, including physical, network, and human
+                                                        elements.</li>
+                                                    <li><strong>Objective</strong> - Penetration tests identify and
+                                                        report vulnerabilities, whereas red team engagements aim to
+                                                        mimic advanced persistent threats (APTs) to test an
+                                                        organization’s detection and response capabilities.</li>
+                                                    <li><strong>Approach</strong> - Penetration testers use structured
+                                                        methodologies with explicit permission, while red teams employ
+                                                        stealthy, adversarial tactics, often with limited prior
+                                                        knowledge to emulate real attackers.</li>
+                                                </ul>
+                                                <p><strong>Red Team Methodology</strong></p>
+                                                <p>Red teaming follows a lifecycle: planning, reconnaissance, initial
+                                                    access, persistence, lateral movement, and exfiltration. You’ll
+                                                    learn to think like an attacker, using tactics like social
+                                                    engineering, custom exploits, and covert operations to bypass
+                                                    defenses.</p>
+                                                <p><strong>Hands-On Learning</strong></p>
+                                                <p>In labs, you’ll simulate a red team engagement against a mock
+                                                    organization, using tools like Cobalt Strike to execute a
+                                                    multi-stage attack. You’ll compare this to a penetration test on the
+                                                    same environment to understand the differences in scope and impact.
+                                                </p>
+                                                <p><strong>Why This Matters</strong></p>
+                                                <p>Understanding red teaming versus penetration testing helps you adopt
+                                                    an attacker’s mindset, critical for assessing and improving an
+                                                    organization’s overall security posture.</p>
+                                        </em></p>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <h4>Engagement Planning and Scoping</h4>
+                                <div class="content-area">
+                                    <p><em>
+                                            <p>Effective red team operations require meticulous planning and scoping to
+                                                ensure ethical, legal, and effective engagements. This section covers
+                                                how to design and execute a red team operation.</p>
+                                            <p><strong>Planning Process</strong></p>
+                                            <ul>
+                                                <li><strong>Objective Definition</strong> - Define goals, such as
+                                                    testing incident response or data exfiltration defenses.</li>
+                                                <li><strong>Rules of Engagement (RoE)</strong> - Establish boundaries,
+                                                    like avoiding production systems or limiting physical access
+                                                    attempts.</li>
+                                                <li><strong>Target Analysis</strong> - Identify critical assets, like
+                                                    sensitive databases or executive accounts, to focus the attack.</li>
+                                                <li><strong>Team Coordination</strong> - Assign roles (e.g., network
+                                                    specialist, social engineer) and communication protocols.</li>
+                                            </ul>
+                                            <p><strong>Scoping Considerations</strong></p>
+                                            <p>You’ll learn to balance realism with safety, ensuring the engagement
+                                                mimics real threats without causing harm. This includes obtaining
+                                                explicit client permission, defining escalation paths for critical
+                                                findings, and ensuring compliance with laws like the CFAA.</p>
+                                            <p><strong>Hands-On Learning</strong></p>
+                                            <p>You’ll draft an RoE for a mock red team engagement, create a target
+                                                profile based on OSINT, and develop a detailed attack plan, including
+                                                timelines and contingencies, for a simulated organization.</p>
+                                            <p><strong>Why This Matters</strong></p>
+                                            <p>Proper planning ensures red team operations are effective, ethical, and
+                                                aligned with client goals, maximizing their value in improving security.
+                                            </p>
+                                        </em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="content-module">
+                        <h2 class="module-title">Module 2: Command and Control Infrastructure</h2>
+                        <div class="module-content">
+                            <p>Master the setup and management of C2 infrastructure for red team operations.</p>
+                            <div class="content-block">
+                                <h4>C2 Framework Comparison</h4>
+                                <div class="content-area">
+                                    <p><em>
+                                            <p>Command and Control (C2) frameworks allow red teams to manage compromised
+                                                systems, execute commands, and maintain persistence. This section
+                                                compares popular C2 frameworks and their use in red teaming.</p>
+                                            <p><strong>Key Frameworks</strong></p>
+                                            <ul>
+                                                <li><strong>Cobalt Strike</strong> - A commercial tool offering robust
+                                                    features like beaconing, post-exploitation modules, and covert
+                                                    communication channels.</li>
+                                                <li><strong>Metasploit</strong> - An open-source framework with
+                                                    extensive exploit and payload options, ideal for beginners.</li>
+                                                <li><strong>Empire</strong> - A PowerShell-based C2 framework focused on
+                                                    post-exploitation and lateral movement.</li>
+                                                <li><strong>Sliver</strong> - A modern, open-source C2 framework with
+                                                    cross-platform support and stealth features.</li>
+                                            </ul>
+                                            <p><strong>Comparison Criteria</strong></p>
+                                            <ul>
+                                                <li><strong>Stealth</strong> - Ability to evade detection by antivirus
+                                                    or intrusion detection systems.</li>
+                                                <li><strong>Flexibility</strong> - Support for multiple protocols (e.g.,
+                                                    HTTP, DNS) and payloads.</li>
+                                                <li><strong>Ease of Use</strong> - User interface and setup complexity.
+                                                </li>
+                                                <li><strong>Scalability</strong> - Handling large-scale engagements with
+                                                    multiple compromised hosts.</li>
+                                            </ul>
+                                            <p><strong>Hands-On Learning</strong></p>
+                                            <p>You’ll set up Cobalt Strike and Sliver in a lab environment, deploy
+                                                beacons to simulate compromised hosts, and compare their performance in
+                                                terms of stealth and functionality.</p>
+                                            <p><strong>Why This Matters</strong></p>
+                                            <p>Choosing the right C2 framework is critical for effective red team
+                                                operations, enabling stealthy control and realistic attack simulation.
+                                            </p>
+                                        </em></p>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <h4>Infrastructure Security and OPSEC</h4>
+                                <div class="content-area">
+                                    <p><em>
+                                            <p>Operational Security (OPSEC) and infrastructure security ensure your C2
+                                                setup remains undetectable and resilient. This section covers best
+                                                practices for securing C2 infrastructure and maintaining OPSEC.</p>
+                                            <p><strong>Securing C2 Infrastructure</strong></p>
+                                            <ul>
+                                                <li><strong>Domain Fronting</strong> - Use legitimate cloud services to
+                                                    mask C2 traffic, making it appear as normal activity.</li>
+                                                <li><strong>Encrypted Communication</strong> - Use HTTPS or custom
+                                                    encryption to protect C2 channels.</li>
+                                                <li><strong>Redundant Servers</strong> - Set up multiple C2 servers to
+                                                    maintain access if one is detected.</li>
+                                                <li><strong>Obfuscation</strong> - Obfuscate payloads to evade antivirus
+                                                    and intrusion detection systems.</li>
+                                            </ul>
+                                            <p><strong>OPSEC Practices</strong></p>
+                                            <ul>
+                                                <li><strong>Anonymity</strong> - Use VPNs, Tor, or dedicated servers to
+                                                    hide your identity.</li>
+                                                <li><strong>Compartmentalization</strong> - Separate team roles and
+                                                    infrastructure to limit exposure if compromised.</li>
+                                                <li><strong>Logging Discipline</strong> - Avoid leaving traces like log
+                                                    files or metadata that could reveal your activities.</li>
+                                            </ul>
+                                            <p><strong>Hands-On Learning</strong></p>
+                                            <p>You’ll configure a secure C2 server with domain fronting, implement
+                                                encrypted channels, and practice OPSEC by simulating a red team
+                                                operation while avoiding detection in a lab environment.</p>
+                                            <p><strong>Why This Matters</strong></p>
+                                            <p>Robust C2 infrastructure and strict OPSEC ensure your red team operations
+                                                remain covert, maximizing their effectiveness and realism.</p>
+                                        </em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Enroll CTA -->
+        <section class="enroll-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Master Red Team Operations</h2>
+                    <p>Learn advanced adversarial simulation and red team methodologies.</p>
+                    <div class="cta-buttons">
+                        <!-- <button class="btn btn-primary btn-large">Enroll Now - $699</button> -->
+                        <a href="courses.html" class="btn btn-secondary btn-large">View All Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="CyberEnough" class="logo">
+                        <span class="logo-text">CyberEnough</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering the next generation of cybersecurity professionals
+                        through accessible penetration testing education by Rudra Dev.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Learn</h4>
+                        <a href="courses.html" class="footer-link">All Courses</a>
+                        <a href="courses.html" class="footer-link">Beginner Track</a>
+                        <a href="courses.html" class="footer-link">Advanced Track</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="about.html" class="footer-link">Our Team</a>
+                        <a href="about.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberEnough. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
