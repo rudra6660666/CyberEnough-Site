@@ -245,23 +245,51 @@ if (filterTabs.length > 0 && courseItems.length > 0) {
             }
             
             if (isValid) {
-                // Show success message
+                // Show loading state
                 const submitButton = this.querySelector('button[type="submit"]');
                 const originalText = submitButton.textContent;
                 
-                submitButton.textContent = 'Message Sent!';
-                submitButton.style.background = 'var(--gradient-primary)';
+                submitButton.textContent = 'Sending...';
                 submitButton.disabled = true;
                 
-                // Reset form
-                this.reset();
-                
-                // Reset button after 3 seconds
-                setTimeout(() => {
-                    submitButton.textContent = originalText;
-                    submitButton.style.background = '';
-                    submitButton.disabled = false;
-                }, 3000);
+                // Actually submit to Formspree
+                fetch(this.action, {
+                    method: this.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        // Show success message
+                        submitButton.textContent = 'Message Sent!';
+                        submitButton.style.background = 'var(--gradient-primary)';
+                        
+                        // Reset form
+                        this.reset();
+                        
+                        // Reset button after 3 seconds
+                        setTimeout(() => {
+                            submitButton.textContent = originalText;
+                            submitButton.style.background = '';
+                            submitButton.disabled = false;
+                        }, 3000);
+                    } else {
+                        throw new Error('Network response was not ok');
+                    }
+                }).catch(error => {
+                    // Show error message
+                    submitButton.textContent = 'Failed to send. Try again.';
+                    submitButton.style.background = 'var(--gradient-accent)';
+                    
+                    setTimeout(() => {
+                        submitButton.textContent = originalText;
+                        submitButton.style.background = '';
+                        submitButton.disabled = false;
+                    }, 3000);
+                    
+                    console.error('Form submission error:', error);
+                });
                 
                 console.log('Form submitted:', formObject);
             } else {
